@@ -29,15 +29,15 @@ function myGame() {
   let input = document.querySelector("input")
   let inputValue = Number(input?.value)
   if(attempts>10){
-    utilityFunc("YOU LOSES😭",`You took More than 10 attempts`,"rgb(255, 95, 83)",true)
+    utilityFunc("GAME OVER😭",`You took More than 10 attempts`,"rgb(255, 95, 83)",true)
   }
-  if (inputValue > val) {
+  else if (inputValue > val) {
     utilityFunc(`Your Guess ${inputValue} is too High`,`Attempts: ${attempts}`)
   }
-  if (inputValue < val) {
+  else if (inputValue < val) {
     utilityFunc(`Your Guess ${inputValue} is too low`,`Attempts: ${attempts}`)
   }
-  if (inputValue == val) {
+  else if (inputValue == val) {
     utilityFunc("YOU GOT IT",`You took ${attempts} attempts`,"#67ff67",true)
   }
 }
