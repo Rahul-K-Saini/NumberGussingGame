@@ -2,7 +2,7 @@ let attempts
 let val
 let result_div
 let attempts_cont
-let container = document.querySelector('main')
+let container = document.querySelector('.section-container')
 const button = document.getElementById('guess_button')
 const retry = document.getElementById('retry_button')
 

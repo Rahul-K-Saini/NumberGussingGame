@@ -24,22 +24,23 @@
     </header>
 
     <main class="container">
-        <section>
-            <h1><span style="color:rgb(203, 240, 37)">Welcome</span> to Number Guessing Game</h1>
-            <h2>There is <span style="color:red">Mysterious Number</span><br>Guess The Number Quickly</h2>
-            <small>Guess Under 10 attempts to win</small>
-        </section>
-
-        <section>
-            <label for="guess">Enter the number:</label>
-            <input type="number" name="guess" id="guess">
-            <button id="guess_button" onclick="myGame()">Guess</button>
-            <span id='retry_button'></span>
-            <div id="result">
-                <p id="info"></p>
-                <span id = 'attempts'></span> 
-            </div>
-        </section>
+        <h1><span style="color:rgb(203, 240, 37)">Welcome</span> to Number Guessing Game</h1>
+        <div class="section-container">
+            <section>
+                <h2>There is <span style="color:red">Mysterious Number</span><br>Guess The Number Quickly</h2>
+                <small>Guess Under 10 attempts to win</small>
+            </section>
+            <section>
+                <label for="guess">Enter the number:</label>
+                <input type="number" name="guess" id="guess">
+                <button id="guess_button" onclick="myGame()">Guess</button>
+                <span id='retry_button'></span>
+                <div id="result">
+                    <p id="info"></p>
+                    <span id = 'attempts'></span> 
+                </div>
+            </section>
+        </div>
     </main>
 
 </body>
